@@ -11,25 +11,6 @@ html {
     font-weight: 800;
     font-size: 1.5em;
     color: black; }
-  @media screen and (max-width: 786px) {
-    html body .text__home {
-      font-weight: 800;
-      font-size: 1em;
-      color: black; }
-    html body .text__p2 {
-      text-align: center; }
-    html body .main__img__index {
-      display: none; } }
-  @media screen and (max-width: 550px) {
-    html body .text__home {
-      font-weight: 800;
-      font-size: 1em;
-      color: black; }
-    html body .text__align {
-      text-align: center;
-      padding: 1em; }
-    html body .main__img__index {
-      display: none; } }
   html body .padding__nav {
     padding: 3em; }
   html body ul li a {
@@ -44,7 +25,8 @@ html {
   html body div div .text__main {
     font-size: 5em;
     line-height: 1em;
-    padding: 20px; }
+    padding-bottom: 20px;
+    padding-top: 20px; }
   html body div div .text__p {
     font-size: 2.5em; }
   html body div div .text__p2 {
@@ -66,14 +48,16 @@ html {
     padding-bottom: 2.5px; }
   html body .section__1 {
     background-color: black;
-    height: 80em;
-    padding-top: 2em; }
+    padding-top: 2em;
+    padding-bottom: 2em; }
   html body .section__2 {
-    height: 75em;
-    padding-top: 10em; }
+    padding-top: 2em;
+    padding-bottom: 2em; }
   html body .section__3 {
     background-color: black;
-    height: 15em; }
+    color: gray;
+    padding: 2em;
+    font-size: 2em; }
   html body .section__about {
     background-color: black;
     height: 1.5em; }
@@ -84,3 +68,21 @@ html {
     height: 50em; }
   html body .section__portfolio2 {
     padding-bottom: 3em; }
+  @media screen and (max-width: 786px) {
+    html body .text__home {
+      font-weight: 800;
+      font-size: 1em;
+      color: black; }
+    html body .text__p2 {
+      text-align: center; } }
+  @media screen and (max-width: 576px) {
+    html body .text__home {
+      font-weight: 800;
+      font-size: 1em;
+      color: black; }
+    html body .text__align {
+      text-align: center;
+      padding: 1em; }
+    html body .main__padding {
+      padding-top: 3em;
+      padding-bottom: 3em; } }

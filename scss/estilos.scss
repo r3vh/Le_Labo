@@ -1,3 +1,11 @@
+// Variables 
+
+$textBright: white;
+$textShade: gray;
+$textDark: black;
+
+// Seetins HTML & Body 
+
 html {
 	font-family: montserrat, san-serif;
 	font-size: 62.5%;
@@ -15,45 +23,14 @@ html {
 	 	.text__home {
 	 		font-weight: 800;
 	 		font-size: 1.5em;
-	 		color: black;
+	 		color: $textDark;
 	 	}
-
-	 	@media screen and (max-width: 786px) {
-	 		.text__home {
-	 			font-weight: 800;
-	 		    font-size: 1em;
-	 		    color: black;
-	 		}
-	 		.text__p2 {
-	 			text-align: center;
-	 		}
-	 		.main__img__index {
-	 			display: none;
-	 		}
-
-	 		
-	 	}
-
-	 	@media screen and (max-width: 550px) {
-	 		.text__home {
-	 			font-weight: 800;
-	 		    font-size: 1em;
-	 		    color: black;
-	 		}
-	 		.text__align {
-	 			text-align: center;
-	 			padding: 1em;
-	 		}
-	 		.main__img__index {
-	 			display: none;
-	 		}
-	 		
-	 	}
-
 
 	 	.padding__nav {
 	 		padding: 3em;
 	 	}
+
+// Nav Text Color 
 
 	 	ul {
 	 		li {
@@ -72,6 +49,8 @@ html {
 	 		padding: 10px;
 	 	}
 
+// Settings Elements
+
 	 	div {
 	 		.video__style {
 	 			padding: 10px;
@@ -80,7 +59,8 @@ html {
 	 			.text__main {
 	 				font-size: 5em;
 	 				line-height: 1em;
-	 				padding: 20px;
+	 				padding-bottom: 20px;
+	 				padding-top: 20px;
 	 			}
 	 			.text__p {
 	 				font-size: 2.5em;
@@ -89,7 +69,7 @@ html {
 	 				font-size: 2em;
 	 			}
 	 			.text__white {
-	 				color: white;
+	 				color: $textBright;
 	 			}
 	 			.text__services {
 	 				font-size: 2.5em;
@@ -112,20 +92,24 @@ html {
 	 		}
 	 	}
 
+// Settings Sections
+
 	 	.section__1 {
 	 		background-color: black;
-	 		height: 80em;
 	 		padding-top: 2em;
+	 		padding-bottom: 2em;
 	 	}
 
 	 	.section__2 {
-	 		height: 75em;
-	 		padding-top: 10em;
+	 		padding-top: 2em;
+	 		padding-bottom: 2em;
 	 	}
 	 	
 	 	.section__3 {
 	 		background-color: black;
-	 		height: 15em;
+	 		color: $textShade;
+	 		padding: 2em;
+	 		font-size: 2em;
 	 	}
 
 	 	.section__about {
@@ -145,6 +129,40 @@ html {
 	 	.section__portfolio2 {
 	 		padding-bottom: 3em;
 	 	}
+
+// MediaQueries
+
+	 	@media screen and (max-width: 786px) {
+	 		.text__home {
+	 			font-weight: 800;
+	 		    font-size: 1em;
+	 		    color: black;
+	 		}
+	 		.text__p2 {
+	 			text-align: center;
+	 		}
+	 	}
+
+	 	@media screen and (max-width: 576px) {
+	 		.text__home {
+	 			font-weight: 800;
+	 		    font-size: 1em;
+	 		    color: black;
+	 		}
+	 		.text__align {
+	 			text-align: center;
+	 			padding: 1em;
+	 		}
+
+	 		.img__display {
+	 		}
+
+	 		.main__padding {
+	 			padding-top: 3em;
+	 			padding-bottom: 3em;
+	 		}
+	 	}
+
 
 
 	 }
