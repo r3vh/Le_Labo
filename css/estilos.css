@@ -10,78 +10,98 @@ html {
   html body .text__home {
     font-weight: 800;
     font-size: 1.5em;
-    color: black; }
+    color: #2E4053; }
   html body .padding__nav {
     padding: 3em; }
+  html body input {
+    width: 100%; }
+  html body textarea {
+    width: 100%; }
   html body ul li a {
-    color: black; }
+    color: #2E4053; }
   html body .main__padding {
     padding-top: 15em;
     padding-bottom: 15em; }
   html body .main__img {
-    padding: 10px; }
-  html body div .video__style {
-    padding: 10px; }
+    padding: 1em; }
+  html body div .container__fluid__padding {
+    padding: 0 !important; }
   html body div div .text__main {
     font-size: 5em;
     line-height: 1em;
     padding-bottom: 20px;
     padding-top: 20px; }
   html body div div .text__p {
-    font-size: 2.5em; }
+    font-size: 2.8em;
+    padding-bottom: .3em; }
   html body div div .text__p2 {
     font-size: 2em; }
+  html body div div .padding__text__p2 {
+    padding-top: 5em;
+    padding-bottom: 5em; }
   html body div div .text__white {
-    color: white; }
-  html body div div .text__services {
-    font-size: 2.5em;
-    background-color: black;
-    color: white;
-    display: inline; }
-  html body div div .img__padding {
-    padding-top: 2em; }
+    color: #FBFCFC; }
+  html body div div .portfolio__padding__img {
+    padding-top: 2em;
+    padding-bottom: 2em;
+    position: relative; }
+  html body div div .text__portafolio {
+    opacity: 0%; }
   html body div div .hover__img:hover {
     transition: 1s;
-    padding: 20px; }
-  html body div div .padding__div {
-    padding-top: 2.5px;
-    padding-bottom: 2.5px; }
+    background-color: blue; }
+    html body div div .hover__img:hover .text__portafolio {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: #FBFCFC;
+      opacity: 100%;
+      font-size: 1.5em;
+      font-weight: 800;
+      text-align: center; }
+  html body div div .hover__opacity:hover {
+    opacity: 50%; }
+  html body div div .contact__form {
+    padding-top: 3em; }
   html body .section__1 {
     background-color: black;
-    padding-top: 2em;
-    padding-bottom: 2em; }
+    padding-top: 5em;
+    padding-bottom: 5em; }
   html body .section__2 {
-    padding-top: 2em;
-    padding-bottom: 2em; }
+    padding-top: 7em;
+    padding-bottom: 7em; }
   html body .section__3 {
     background-color: black;
-    color: gray;
-    padding: 2em;
-    font-size: 2em; }
-  html body .section__about {
-    background-color: black;
-    height: 1.5em; }
-  html body .section__about2 {
-    height: 20em; }
-  html body .section__portfolio {
-    background-color: black;
-    height: 50em; }
-  html body .section__portfolio2 {
-    padding-bottom: 3em; }
+    color: #D6DBDF;
+    padding: 6em;
+    font-size: 1em; }
   @media screen and (max-width: 786px) {
     html body .text__home {
       font-weight: 800;
       font-size: 1em;
-      color: black; }
+      color: #2E4053; }
     html body .text__p2 {
-      text-align: center; } }
+      text-align: center; }
+    html body .main__padding {
+      padding-top: 5em;
+      padding-bottom: 5em; } }
   @media screen and (max-width: 576px) {
     html body .text__home {
       font-weight: 800;
       font-size: 1em;
-      color: black; }
+      color: #2E4053; }
+    html body .text__menu {
+      font-size: .6em;
+      padding-top: .5em; }
     html body .text__align {
       text-align: center; }
     html body .main__padding {
-      padding-top: 3em;
-      padding-bottom: 3em; } }
+      padding-top: 1em;
+      padding-bottom: 3em; }
+    html body div div .text__main {
+      font-size: 3.5em;
+      text-align: center; }
+    html body div div .img__padding {
+      padding-top: 2em;
+      padding-bottom: 5em; } }

@@ -27,21 +27,21 @@
 
 	<title>Contacto • Le Labo</title>
 </head>
-<body>
+<body class="d-flex flex-column min-vh-100">
 
     <header>
 	    <div class="container-fluid padding__nav text__nav">
             <div class="row">
-              <div class="col-sm text__align">
-                <a href="index.html" class="text__home">
+              <div class="col-sm-4 col-md-6 col-lg-6 text__align">
+                 <a href="index.html" class="text__home">
                   LE LABO D'ÉCRITURE
-                </a>                
+                 </a> 
               </div>
 
-              <div class="col-sm">
+              <div class="col-sm-8  col-md-6 col-lg-6 text__menu">
           	    <ul class="nav justify-content-center">
                    <li class="nav-item">
-                     <a class="nav-link active" href="about.html">about</a>
+                     <a class="nav-link" href="about.html">about</a>
                    </li>
                    <li class="nav-item">
                      <a class="nav-link" href="portfolio.html">portfolio</a>
@@ -50,7 +50,7 @@
                      <a class="nav-link" href="services.html">services</a>
                    </li>
                    <li class="nav-item">
-                     <a class="nav-link nav__indicator" href="#" tabindex="-1" aria-disabled="true">contact</a>
+                     <a class="nav-link nav__indicator" href="contact.html" tabindex="-1" aria-disabled="true">contact</a>
                    </li>
                  </ul>
                </div>
@@ -58,30 +58,29 @@
          </div>
     </header>
 
-     <main class="main__padding container">
+
+     <main class="main__padding">
      	<div class="container">
-           <div class="row">
-            <div class="col align-self-center text-left center-block">
+          <div class="row">
+
+            <div class="col-md-6 align-self-center text-center">
                <img src="img/le_labo.png" class="main__img img-fluid">
              </div>
-             <div class="col align-self-center">
+
+             <div class="col-md-6 align-self-center contact__form">
                <form action="#" method="post" class="text__p2">
                   <fieldset>
-                     <legend class="text__main main__img">
-                        <h1>
+                     <legend>
+                        <h1 class="text-center text__p2">
                           ¿Necesitas una redacíon?
                         </h1>
                       </legend>
-
                      <label for="nombre_client">Nombre</label>
                      <input type="text" type="nombre_client" name=""><br><br>
-
                      <label for="email_cliente">Email</label>
                      <input type="Email" type="email_cliente" name=""><br><br>
-
                      <label for="comentarios">Comentarios</label><br><br>
                      <textarea name="comentarios" rows="6"></textarea><br><br>
-
                      <label for="packs">Solicitar Informacion sobre:</label>
                      <select name="packs">
                        <option value="basic">Paquete Basico</option>
@@ -90,15 +89,27 @@
                      </select><br><br>
                      <input type="submit" name="submit" value="Enviar">
                    </fieldset><br><br>
-
                </form>
            </div>
-         </div>
+
+          </div>
+        </div>
+
      </main>
 
-     <section class="section__3">
-     	
-     </section>
+      <footer class="section__3 container-fluid mt-auto">
+     	<div class="row">
+     		<p class="col-lg-4 text-center">
+     			Cordoba, Argentina
+     	    </p>
+     	    <p class="col-lg-4 text-center">
+     			¿Charlamos?  hola@lelabodecriture.com
+     	    </p>
+     	    <p class="col-lg-4 text-center">
+     			+54 351 2327505
+     	    </p>
+     	</div>	
+     </footer>
 
 
 	

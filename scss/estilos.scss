@@ -1,10 +1,10 @@
 // Variables 
 
-$textBright: white;
-$textShade: gray;
-$textDark: black;
+$textBright: #FBFCFC;
+$textShade: #D6DBDF;
+$textDark: #2E4053;
 
-// Seetins HTML & Body 
+// Seettins HTML & Body 
 
 html {
 	font-family: montserrat, san-serif;
@@ -30,12 +30,20 @@ html {
 	 		padding: 3em;
 	 	}
 
+	 	input {
+	 		width: 100%
+	 	}
+
+	 	textarea {
+	 		width: 100%
+	 	}
+
 // Nav Text Color 
 
 	 	ul {
 	 		li {
 	 			a {
-	 				color: black;
+	 				color: $textDark;
 	 			}
 	 		}
 	 	}
@@ -46,14 +54,14 @@ html {
 	 	}
 
 	 	.main__img {
-	 		padding: 10px;
+	 		padding: 1em;
 	 	}
 
 // Settings Elements
 
 	 	div {
-	 		.video__style {
-	 			padding: 10px;
+	 		.container__fluid__padding {
+	 			padding: 0 !important;
 	 		}
 	 		div {
 	 			.text__main {
@@ -63,30 +71,54 @@ html {
 	 				padding-top: 20px;
 	 			}
 	 			.text__p {
-	 				font-size: 2.5em;
+	 				font-size: 2.8em;
+	 				padding-bottom: .3em;
 	 			}
 	 			.text__p2 {
 	 				font-size: 2em;
 	 			}
+
+	 			.padding__text__p2 {
+	 				padding-top: 5em;
+	 				padding-bottom: 5em;
+	 			}
 	 			.text__white {
 	 				color: $textBright;
 	 			}
-	 			.text__services {
-	 				font-size: 2.5em;
-	 				background-color: black;
-	 				color: white;
-	 				display: inline;
-	 			}
-	 			.img__padding {
+	 		
+	 			.portfolio__padding__img {
 	 				padding-top: 2em;
+	 				padding-bottom: 2em;
+	 				position: relative;
 	 			}
+
+	 			.text__portafolio {
+	 				opacity: 0%;
+	 			}
+
+
 	 			.hover__img:hover {
 	 				transition: 1s;
-	 				padding: 20px;
+	 				background-color: blue;
+	 				.text__portafolio {
+	 				      position: absolute;
+                          top: 50%;
+                          left: 50%;
+                          transform: translate(-50%, -50%);
+                          color: $textBright;
+                          opacity: 100%;
+                          font-size: 1.5em;
+                          font-weight: 800;
+                          text-align: center;
+	 			      }
 	 			}
-	 			.padding__div {
-	 				padding-top: 2.5px;
-	 			    padding-bottom: 2.5px;
+
+	 			.hover__opacity:hover {
+	 				opacity: 50%
+	 			}
+
+	 			.contact__form {
+	 				padding-top: 3em;
 	 			}
 
 	 		}
@@ -96,38 +128,20 @@ html {
 
 	 	.section__1 {
 	 		background-color: black;
-	 		padding-top: 2em;
-	 		padding-bottom: 2em;
+	 		padding-top: 5em;
+	 		padding-bottom: 5em;
 	 	}
 
 	 	.section__2 {
-	 		padding-top: 2em;
-	 		padding-bottom: 2em;
+	 		padding-top: 7em;
+	 		padding-bottom: 7em;
 	 	}
 	 	
 	 	.section__3 {
 	 		background-color: black;
 	 		color: $textShade;
-	 		padding: 2em;
-	 		font-size: 2em;
-	 	}
-
-	 	.section__about {
-	 		background-color: black;
-	 		height: 1.5em;
-	 	}
-
-	 	.section__about2 {
-	 		height: 20em;
-	 	}
-
-	 	.section__portfolio {
-	 		background-color: black;
-	 		height: 50em;
-	 	}
-
-	 	.section__portfolio2 {
-	 		padding-bottom: 3em;
+	 		padding: 6em;
+	 		font-size: 1em;
 	 	}
 
 // MediaQueries
@@ -136,19 +150,29 @@ html {
 	 		.text__home {
 	 			font-weight: 800;
 	 		    font-size: 1em;
-	 		    color: black;
+	 		    color: $textDark;
 	 		}
 	 		.text__p2 {
 	 			text-align: center;
 	 		}
+	 		.main__padding {
+	 		padding-top: 5em;
+	 		padding-bottom: 5em;
+	 	    }
 	 	}
 
 	 	@media screen and (max-width: 576px) {
 	 		.text__home {
 	 			font-weight: 800;
 	 		    font-size: 1em;
-	 		    color: black;
+	 		    color: $textDark;
 	 		}
+	 		.text__menu {
+	 			font-size: .6em;
+	 			padding-top: .5em;
+
+	 		}
+
 	 		.text__align {
 	 			text-align: center;
 	 		}
@@ -157,14 +181,23 @@ html {
 	 		}
 
 	 		.main__padding {
-	 			padding-top: 3em;
+	 			padding-top: 1em;
 	 			padding-bottom: 3em;
 	 		}
+
+	 		div {
+	 			div {
+	 				.text__main {
+	 					font-size: 3.5em;
+	 					text-align: center;
+	 				}
+	 				.img__padding {
+	 				    padding-top: 2em;
+	 				    padding-bottom: 5em;
+	 			    }
+	 			}
+	 		}
 	 	}
-
-
-
-
 	 }
 }
 
